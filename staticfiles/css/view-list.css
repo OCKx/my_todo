@@ -1,0 +1,38 @@
+body{
+    margin: 0 20px;
+    margin-top: 100px;
+}
+
+.option-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(183, 163, 9);
+    color: rgb(7, 84, 7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+h3{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.view{
+    text-decoration: underline;
+}
+
+.create{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}

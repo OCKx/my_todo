@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+    color: green;
+}
+
+span{
+    color: rgb(7, 84, 7);
+    cursor: pointer;
+    text-decoration: underline;
+}

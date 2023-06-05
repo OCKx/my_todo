@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <meta name="description" content="todo list is an app where users can store list of their planned activities">
+    <meta name="keyword" content="online, todo-list, app">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="cache-control" content="cache">
+    <meta name="copyright" content="OCK-X">
+    <meta name="author" content="Obiorah Callistus Kosarachi (kcee)">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <div class="my-todo">
+        <h1>MY TO-DO</h1>
+    </div>
+    
+    <div class="developer">
+        <h4>Project developed by Obiorah Callistus Kosarachukwu (kcee)</h4>
+    </div>
+
+    <script>
+        setTimeout(() => {
+        window.location.href="{% url 'login' %}"
+        }, 3000);
+    </script>
+</body>
+</html>

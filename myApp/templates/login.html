@@ -1,0 +1,36 @@
+{% load static %}
+{% load admin_urls %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+    <h6><a href="{% url 'admin:index' %}">Admin</a></h6>
+    <div class="size">
+        <div class="form-div">
+            <form method="POST" action="{% url 'login' %}">
+                {% csrf_token %}
+                <h2>Welcome</h2>
+                <div>
+                {% if error_message %}
+                  <p class="error">{{ error_message }}</p>
+                {% endif %}
+                </div>
+
+                <input type="text" placeholder="Username" name="username" maxlength="20" required><br>
+                <input type="password" placeholder="Pin" name="pin" maxlength="4" required><br>
+                <input type="submit" class="submit" value="LOGIN">
+                <div class="log-div">
+                    <p>Don't have an account <a href="{% url 'signup' %}">Signup</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

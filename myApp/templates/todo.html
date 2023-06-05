@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="{% static 'css/todo.css' %}">
+</head>
+<body>
+    <div class="option-div">
+        <h3 class="create js-create-list">Create List</h3>
+        <h3 class="view js-view-list"><a href="{% url 'viewlist' %}">View List</a></h3>
+    </div>
+
+    <div class="todo-div">
+        <div class="input-div">
+            <input type="text" name="text" class="text js-getList" placeholder="input your list">
+            <input type="date" name="date" class="date js-getDate">
+            <button class="add" onclick="addList()">Add List</button>
+        </div>
+
+        <form action="{% url 'save_todo' %}" method="POST">
+            {% csrf_token %}
+            <div class="display-list-div js-list-container">
+            </div>
+            <div class="save-div">
+                <button class="save" type="submit" id="js-save-button" disabled>Save</button>
+                <button class="clear" type="button" id="js-clear-button" disabled>Clear</button>
+            </div>
+        </form>
+    </div>
+
+        <script src="{% static 'js/todo.js' %}"></script>
+</body>
+</html>

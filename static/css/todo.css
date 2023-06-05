@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 20px;
+    margin-top: 100px;
+}
+
+.option-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(183, 163, 9);
+    color: rgb(7, 84, 7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+h3{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.create{
+    text-decoration: underline;
+}
+
+.view{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.input-div{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 10px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.text, .date{
+    padding: 8px;
+    font-size: 16px;
+}
+
+.add{
+    width: 100px;
+    background-color: rgb(7, 84, 7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.list-div{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 10px;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.delete{
+    width: 25px;
+    padding: 5px;
+    background-color: rgb(186, 9, 9);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.save, .clear{
+    width: 70px;
+    padding: 8px;
+    margin-top: 39px;
+    background-color: rgb(7, 84, 7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.clear{
+    background-color: rgb(186, 9, 9);
+}
