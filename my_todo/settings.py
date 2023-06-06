@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f5ba!5#ijcu)e7i3)!b7j%26wp8mr)wv60(3czl$cfuaw+_0)c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ockx.github.io/my_todo/']
 
 
 # Application definition
